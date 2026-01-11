@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif TC", serif;
+  --font-sans: "Noto Sans TC", sans-serif;
+  --font-mono: "Oswald", sans-serif;
+
+  /* Life in Adventure Palette */
+  --color-anime-bg: #E6E2D3;
+  /* Parchment Beige */
+  --color-anime-surface: #D8D3C1;
+  /* Darker Parchment */
+  --color-anime-accent: #8B4513;
+  /* Saddle Brown */
+  --color-anime-danger: #A52A2A;
+  /* Brown */
+  --color-anime-text: #3E3B32;
+  /* Ink Black */
+  --color-anime-text-dim: #6B6659;
+  /* Ink Gray */
+  --color-anime-border: #8B7355;
+  /* Antique Bronze */
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .pixel-border {
+    box-shadow:
+      -2px 0 0 0 var(--color-anime-border),
+      2px 0 0 0 var(--color-anime-border),
+      0 -2px 0 0 var(--color-anime-border),
+      0 2px 0 0 var(--color-anime-border);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-900 text-anime-text font-serif overflow-hidden select-none;
+    /* Main body background is dark to frame the book content */
+  }
+}

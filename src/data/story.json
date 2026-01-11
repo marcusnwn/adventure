@@ -1,0 +1,1068 @@
+[
+    {
+        "id": "character_creation",
+        "title": "序章：覺醒與絕望",
+        "text": "十年前，連接異次元與現實世界的通道——「傳送門」在各地開啟，魔獸肆虐人間。為了對抗它們，人類中出現了覺醒者，被稱為「獵人」。\n\n這是一個殘酷的實力至上主義世界。獵人的等級從S級到E級，一旦覺醒，等級便終身固定，無法改變。高等獵人享受著財富與名譽，而低等獵人只能在生死邊緣掙扎。\n\n你站在獵人協會的魔力檢測儀前，看著那微弱得幾乎要熄滅的光芒。你是程肖宇，被同行譏笑為「人類最弱兵器」的E級獵人。沒有天賦，沒有背景，你擁有的只有那一張張催命般的醫院帳單。",
+        "imageSrc": "https://images.unsplash.com/photo-1519074063912-ad25b57b9d17?q=80&w=2574&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "E級獵人程肖宇：為了母親，我必須活下去",
+                "responseText": "工作人員冷漠地記錄下「E級」的結果。你握緊了拳頭，指甲陷入肉裡。為了患有「永恆沉睡症」的母親，即使是E級，你也必須去狩獵。",
+                "nextNodeId": "e_rank_life_struggle",
+                "effect": {
+                    "statChange": {
+                        "STR": 10,
+                        "INT": 10,
+                        "DEX": 10,
+                        "SAN": 100,
+                        "ALI": 50
+                    },
+                    "addItem": "BrokenDagger",
+                    "addSkill": "Willpower"
+                }
+            },
+            {
+                "text": "【二週目】暗影君主：帶著記憶重生",
+                "responseText": "你的影子在燈光下詭異地拉長，系統熟悉的藍色介面在你視網膜上展開：「歡迎回來，君主大人。」這一次，你將改寫所有悲劇。",
+                "nextNodeId": "system_awakening",
+                "unlockCondition": "ending_time_reversal",
+                "effect": {
+                    "statChange": {
+                        "STR": 30,
+                        "INT": 30,
+                        "DEX": 30,
+                        "SAN": 100,
+                        "ALI": 0
+                    },
+                    "addItem": "DemonKingDagger",
+                    "addSkill": "Arise"
+                }
+            }
+        ]
+    },
+    {
+        "id": "e_rank_life_struggle",
+        "title": "最弱獵人的日常",
+        "text": "幾天後，你參加了一次普通的E級地下城突襲。即使是最弱的哥布林，對你來說也是致命的威脅。你的腹部被生鏽的短刀劃開，鮮血染紅了繃帶。\n\n「肖宇，你沒事吧？」隊伍裡的治療師李珠熙一邊為你治療，一邊嘆氣，「你這樣遲早會送命的，為什麼不換個工作？」\n\n你苦笑著。換工作？一個連大學都沒上完的普通人，哪裡能賺到支付母親維持裝置的鉅款？",
+        "imageSrc": "https://images.unsplash.com/photo-1505526978432-8494b3c43105?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "「沒辦法，我需要錢。」",
+                "responseText": "珠熙無奈地搖搖頭，將最後一點魔力用在了你的傷口上。傷口癒合了，但留下了醜陋的疤痕。",
+                "nextNodeId": "raid_gathering"
+            }
+        ]
+    },
+    {
+        "id": "raid_gathering",
+        "title": "D級傳送門：命運的召集",
+        "text": "一週後，你接到了一通電話。一個位於建築工地的D級傳送門需要湊人數。雖然報酬很低，但這對你來說是救命稻草。\n\n你趕到現場，發現這次的隊長是C級獵人宋致烈。隊伍裡有不少熟面孔，大家看到你都露出了輕鬆的表情——有「最弱兵器」在，說明這次的副本難度很低。\n\n然而，誰也沒有注意到，傳送門散發出的波長有些異常的不穩定。",
+        "imageSrc": "https://images.unsplash.com/photo-1542259681-d41c9c228d44?q=80&w=2000&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "整理裝備，跟隨隊伍進入",
+                "responseText": "你握緊了手中那把已經磨損的便宜匕首，深吸一口氣，踏入了藍色的漩渦。",
+                "nextNodeId": "dungeon_exploration"
+            }
+        ]
+    },
+    {
+        "id": "dungeon_exploration",
+        "title": "深入地下城",
+        "text": "地下城內部陰暗潮濕，石壁上長滿了發光的苔蘚。戰鬥比想像中順利，在宋隊長的帶領下，你們很快就解決了BOSS。\n\n「大家看！這裡有一個隱藏通道！」一名隊員指著BOSS房深處的洞穴喊道。洞穴深不見底，隱約透出一股古老而莊嚴的氣息。\n\n「這可能是傳說中的『雙重地下城』！」有人興奮地說，「裡面的寶物肯定價值連城！」貪婪的氣氛在隊伍中蔓延。",
+        "imageSrc": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2560&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "雖然害怕，但也心動了",
+                "responseText": "你看著那些興奮的隊友，心中計算著如果能分到一件寶物，母親的醫藥費就能解決了。或許，這真的是個機會？",
+                "nextNodeId": "vote_time"
+            }
+        ]
+    },
+    {
+        "id": "vote_time",
+        "title": "生死的投票",
+        "text": "「根據獵人守則，面對未知情況需投票決定。」宋致烈隊長舉起手，「現在是6人贊成繼續，6人反對撤退。」\n\n所有人的目光瞬間集中到了你身上。你是最後一票。你感覺手中的銅幣變得滾燙，這不僅僅是一個選擇，更是對命運的賭注。\n\n你的腦海中浮現出母親在病床上消瘦的臉龐，以及妹妹為了學費打工的身影。",
+        "imageSrc": "https://images.unsplash.com/photo-1628519636224-3432093d9377?q=80&w=2574&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "「我...我想去看看。我需要錢。」",
+                "responseText": "你的聲音有些顫抖，但眼神堅定。宋隊長點點頭：「那就決定了，我們繼續前進。」大門緩緩開啟，彷彿一張巨口等待著獵物。",
+                "nextNodeId": "statue_room"
+            },
+            {
+                "text": "「太危險了，我放棄。」 (直接結局)",
+                "responseText": "恐懼戰勝了貪婪。你轉身離開，無視了隊友失望的眼神。幾天後，新聞報導了那支隊伍全軍覆沒的消息。你活了下來，將在底層繼續苟延殘喘。",
+                "nextNodeId": "ending_coward"
+            }
+        ]
+    },
+    {
+        "id": "statue_room",
+        "title": "卡爾泰農神廟",
+        "text": "通道的盡頭是一個宏偉得令人窒息的神殿。四周環繞著手持各種樂器和武器的巨型石像，每一尊都散發著令人戰慄的壓迫感。\n\n而在大廳的正中央，坐著一尊高達百米的巨神像。它眼神空洞地俯視著你們，彷彿在看著一群螻蟻。\n\n「轟！」身後的大門突然重重關閉。你驚恐地回頭，發現那個拿著石板的石像上刻著：「卡爾泰農神廟戒律」。",
+        "imageSrc": "https://images.unsplash.com/photo-1629812456605-4a044aa38fbc?q=80&w=2574&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "閱讀第一條戒律：敬神",
+                "responseText": "你大聲讀出石板上的文字，就在這時，你感覺到一道熾熱的視線。你猛地抬頭——神像的眼睛亮起了紅光，它在看著你！",
+                "nextNodeId": "statue_attack_intro"
+            }
+        ]
+    },
+    {
+        "id": "statue_attack_intro",
+        "title": "神的凝視",
+        "text": "「它的眼睛在動！」你驚恐地大喊。但沒人相信你，直到那名試圖強行拉開大門的獵人被門口的守衛石像瞬間斬首。\n\n鮮血噴濺在門上，恐懼瞬間引爆了人群。神像的雙眼中積蓄起毀滅性的紅色光芒，那是死亡的顏色。",
+        "imageSrc": "https://images.unsplash.com/photo-1517544845501-bb78cc6818eb?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "大喊：「所有人趴下！向神行禮！」",
+                "responseText": "你按著頭拼命趴在地上。紅色的鐳射光束橫掃過大廳，那些還站著發呆或試圖逃跑的獵人，在一瞬間連慘叫都沒發出就化為了灰燼。",
+                "nextNodeId": "statue_instruments",
+                "effect": {
+                    "statChange": {
+                        "INT": 2
+                    }
+                }
+            },
+            {
+                "text": "嚇得腿軟，站在原地發抖 (SAN值過低)",
+                "responseText": "恐懼凍結了你的神經。鐳射光束貫穿了你的胸膛，你的意識在劇痛中消散。",
+                "nextNodeId": "ending_death_statue",
+                "condition": {
+                    "reqStat": "SAN",
+                    "reqValue": 120
+                }
+            }
+        ]
+    },
+    {
+        "id": "statue_instruments",
+        "title": "試煉：讚美神",
+        "text": "鐳射過後，神像緩緩站了起來。地面隨著它的腳步劇烈震動，它臉上掛著猙獰的笑容，開始踩踏倖存者。\n\n這不是戰鬥，這是單方面的屠殺。「讚美神！」你猛然想起了第二條戒律，「快去找拿樂器的石像！只有音樂能平息它的憤怒！」",
+        "imageSrc": "https://images.unsplash.com/photo-1594145070248-25d25950854c?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "拉著珠熙衝向拿豎琴的石像 (敏捷判定)",
+                "responseText": "你背著腿軟的珠熙，在巨腳踩下的前一秒滑壘衝到了豎琴石像腳下。石像開始彈奏，優美的音樂迴盪在大廳，巨神停下了腳步。",
+                "nextNodeId": "statue_altar",
+                "condition": {
+                    "reqStat": "DEX",
+                    "difficulty": 10
+                },
+                "failureNodeId": "ending_death_statue"
+            },
+            {
+                "text": "慌不擇路，衝向拿盾牌的石像",
+                "responseText": "這是一個錯誤的選擇！盾牌無法發出聲音。巨神無視了你們，巨大的陰影籠罩了下來。",
+                "nextNodeId": "ending_death_statue"
+            }
+        ]
+    },
+    {
+        "id": "statue_altar",
+        "title": "最終試煉：信仰的證明",
+        "text": "神像回到了王座。大廳中央升起了一個祭壇。第三條戒律：「證明你的信仰」。\n\n當倖存者們踏上祭壇時，藍色的火焰燃起，封閉的大門終於打開了。但隨著第一個人逃出大門，火焰減少了一部分，神像的視線再次鎖定了祭壇上的人。\n\n這是一個惡毒的陷阱：必須有人留下來當祭品，其他人才可以活著離開。",
+        "imageSrc": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2560&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "「你們先走...我留下來。」",
+                "responseText": "你看著斷了一條腿的宋隊長和崩潰的珠熙。「我已經受傷了，跑不掉的。」你選擇了犧牲。隊友們含淚離開，最後只剩下你面對揮刀砍來的石像。",
+                "nextNodeId": "system_awakening",
+                "effect": {
+                    "alignment": 20,
+                    "sanity": -50
+                }
+            },
+            {
+                "text": "利用別人當誘餌，自己逃跑 (道德 -50)",
+                "responseText": "生存的本能壓倒了人性。你推開了身邊的人，趁著混亂衝出了大門。你聽到了身後的慘叫，但你沒有回頭。",
+                "nextNodeId": "ending_coward",
+                "effect": {
+                    "alignment": -50
+                }
+            }
+        ]
+    },
+    {
+        "id": "system_awakening",
+        "title": "再覺醒：玩家誕生",
+        "text": "你以為自己死定了。被石像的長矛貫穿，被重錘砸碎...但當你再次睜開眼時，卻發現自己躺在醫院的病床上，身體完好無損。\n\n「是夢嗎？」\n\n不，不是夢。你的眼前漂浮著一個只有你能看見的全息藍色視窗：\n\n【恭喜你成為「玩家」。】\n【每日任務：強者的準備】\n【目標：伏地挺身 100 次，仰臥起坐 100 次，深蹲 100 次，跑步 10 公里。】\n【警告：未完成將受到懲罰。】",
+        "imageSrc": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?q=80&w=2676&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "雖然荒謬，但試著完成任務",
+                "responseText": "你咬牙堅持了下來。完成後，一道金光閃過，你的身體疲勞全消，屬性值竟然真的提升了！這就是你變強的鑰匙！",
+                "nextNodeId": "instant_dungeon_entry",
+                "effect": {
+                    "statChange": {
+                        "STR": 5,
+                        "DEX": 5,
+                        "INT": 3
+                    },
+                    "hpChange": 100
+                }
+            },
+            {
+                "text": "試圖分析系統的源代碼 (需代碼視覺)",
+                "responseText": "你集中精神注視著視窗，竟然發現了背後流動的綠色數據流...這不僅僅是魔法，這是某種高維度的程式！",
+                "nextNodeId": "glitch_discovery",
+                "condition": {
+                    "reqSkill": "CodeVision"
+                }
+            },
+            {
+                "text": "無視任務，躺下睡覺",
+                "responseText": "倒數計時結束。視窗變紅：【任務失敗。轉移至懲罰區。】你瞬間被傳送到了一片巨大的沙漠，身後傳來了巨型蜈蚣的嘶吼聲。",
+                "nextNodeId": "instant_dungeon_entry",
+                "effect": {
+                    "hpChange": -20,
+                    "statChange": {
+                        "DEX": 8
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "instant_dungeon_entry",
+        "title": "即時副本：合井站的試煉",
+        "text": "系統給了你一把鑰匙，指向合井地鐵站。這是一個「即時副本」，裡面的時間流逝與外界不同，且魔獸不會跑出去。\n\n這是你第一次獨自狩獵，沒有隊友，沒有治療。你站在空蕩蕩的地鐵站入口，一隻鋼牙巨狼正啃食著柱子，它發現了你。",
+        "imageSrc": "https://images.unsplash.com/photo-1516574187841-693083f652eb?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "拔出物品欄裡的舊匕首戰鬥 (力量判定)",
+                "responseText": "雖然匕首很鈍，但經過每日任務強化的你已經脫胎換骨。你側身躲過撲咬，一拳打碎了狼的頭骨。",
+                "nextNodeId": "instant_dungeon_boss",
+                "condition": {
+                    "reqStat": "STR",
+                    "difficulty": 12
+                },
+                "effect": {
+                    "addItem": "WolfFang",
+                    "statChange": {
+                        "STR": 2
+                    }
+                }
+            },
+            {
+                "text": "利用地形閃避反擊 (敏捷判定)",
+                "responseText": "你利用地鐵閘門卡住了巨狼的身位，精準地刺入了它的喉嚨。你開始適應這種戰鬥了。",
+                "nextNodeId": "instant_dungeon_boss",
+                "condition": {
+                    "reqStat": "DEX",
+                    "difficulty": 12
+                },
+                "effect": {
+                    "addItem": "WolfFang",
+                    "statChange": {
+                        "DEX": 2
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "instant_dungeon_boss",
+        "title": "副本BOSS：沼澤之主",
+        "text": "一路殺到地鐵深處，原本的軌道已經變成了一片沼澤。一條巨大的藍色毒蛇盤踞在那裡——「沼澤之主：卡薩卡」。\n\n它的鱗片堅硬如鐵，口中噴吐著致命的毒液。這是一個真正的BOSS級魔獸。",
+        "imageSrc": "https://images.unsplash.com/photo-1542259681-d41c9c228d44?q=80&w=2000&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "徒手捏爆它的七寸 (需高力量)",
+                "responseText": "你無視了毒液的侵蝕，用超越常理的蠻力直接扯斷了巨蛇的脖子。「只有這種程度嗎？」你感受到了變強的快感。",
+                "nextNodeId": "kasaka_loot",
+                "condition": {
+                    "reqStat": "STR",
+                    "reqValue": 18
+                }
+            },
+            {
+                "text": "攻擊鱗片薄弱處 (普通戰鬥)",
+                "responseText": "經過一番苦戰，你終於擊殺了巨蛇，但也身中劇毒，視線開始模糊。幸好升級的光芒治癒了你。",
+                "nextNodeId": "kasaka_loot",
+                "effect": {
+                    "hpChange": -30
+                }
+            }
+        ]
+    },
+    {
+        "id": "kasaka_loot",
+        "title": "戰利品：卡薩卡的毒牙",
+        "text": "巨蛇化為光點消失，地上留下了一把散發著詭異綠色毒氣的匕首和一瓶裝著毒液的袋子。\n\n【獲得物品：卡薩卡的毒牙 (攻擊力+25, 附帶麻痺/出血效果)】\n這是你獲得的第一件高級裝備，比商店裡賣的垃圾強上百倍。",
+        "imageSrc": "https://images.unsplash.com/photo-1550565118-c974095cc3d8?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "裝備匕首，準備面對更強的挑戰",
+                "responseText": "你握住匕首，冰冷的觸感讓你冷靜下來。你已經不再是那個E級廢物了，你準備好面對真正的世界了。",
+                "nextNodeId": "c_rank_raid",
+                "effect": {
+                    "addItem": "KasakaDagger",
+                    "statChange": {
+                        "STR": 5
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "c_rank_raid",
+        "title": "C級突襲：蜥蜴人的陰謀",
+        "text": "為了賺錢，你隱藏實力加入了一個由黃東石帶領的C級隊伍。黃東石看起來很豪爽，但眼神中透著狡詐。\n\n在清理完BOSS房前的怪物後，他們露出了獠牙。「哎呀，這裡的礦石太多了，我們得去拿裝備。」黃東石堵住了出口，「就把這小子和那個富二代留在這裡喂蜘蛛吧。」",
+        "imageSrc": "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2574&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "系統任務：緊急殺戮",
+                "responseText": "系統視窗突然彈出，紅光閃爍：【檢測到針對玩家的殺意。緊急任務：殺死所有敵人。失敗懲罰：心臟停止。】你別無選擇，為了活下去，你必須成為修羅。",
+                "nextNodeId": "kill_lizards"
+            },
+            {
+                "text": "試圖談判 (天真)",
+                "responseText": "「談判？」黃東石大笑著射出一箭，擦傷了你的臉頰，「死人是不需要談判的。」系統警告：【生命受威脅，強制執行任務。】",
+                "nextNodeId": "kill_lizards",
+                "effect": {
+                    "hpChange": -5
+                }
+            }
+        ]
+    },
+    {
+        "id": "kill_lizards",
+        "title": "屠殺：規則改變",
+        "text": "你不再是獵物，而是獵人。當黃東石的隊員們揮刀砍向你時，你的身影消失了。\n\n鮮血飛濺，斷肢橫飛。你冷靜地收割了這些人渣的生命，心中竟然沒有一絲波動。你意識到，系統正在將你改造成完美的殺戮機器。",
+        "imageSrc": "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "殺死所有人，不留活口",
+                "responseText": "最後，只剩下富二代劉晨浩在一旁瑟瑟發抖。你擦乾匕首上的血跡，看向他。他立刻跪下發誓效忠於你，並承諾保守祕密。",
+                "nextNodeId": "job_quest_hub",
+                "effect": {
+                    "alignment": -10,
+                    "statChange": {
+                        "STR": 3,
+                        "DEX": 3
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "job_quest_hub",
+        "title": "轉職任務：命運的抉擇",
+        "text": "等級達到40級，系統開啟了轉職任務。你進入了一個類似羅馬競技場的巨大異空間。\n\n這次的選擇將決定你的未來。你感覺到了三個不同的強大氣息在召喚你。",
+        "imageSrc": "https://images.unsplash.com/photo-1516634842-886d38c64447?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "前往騎士團大廳 (正統路線)",
+                "responseText": "你走向了充滿肅殺之氣的中央大廳，那裡有無數亡靈騎士在等待。這條路通向死亡的王座。",
+                "nextNodeId": "job_quest_entry"
+            },
+            {
+                "text": "探索隱藏的圖書館 (智力路線)",
+                "responseText": "你發現了一條通往地下的祕密通道，那裡散發著強烈的魔力波動。或許有另一種力量形式？",
+                "nextNodeId": "job_quest_mage",
+                "condition": {
+                    "reqStat": "INT",
+                    "reqValue": 30
+                }
+            },
+            {
+                "text": "尋找競技場的出口 (反叛路線)",
+                "responseText": "你拒絕被系統擺佈，試圖利用「代碼視覺」尋找這個空間的邊界漏洞。",
+                "nextNodeId": "job_quest_glitch",
+                "condition": {
+                    "reqSkill": "CodeVision"
+                }
+            }
+        ]
+    },
+    {
+        "id": "job_quest_entry",
+        "title": "轉職：受詛咒的騎士團",
+        "text": "無數隱形的刺客和重甲騎士向你湧來。這裡不能喝藥水，不能離開，只能戰鬥到底。\n\n時間越久，你的體力消耗越大。這是一場持久戰，也是對你意志的考驗。",
+        "imageSrc": "https://images.unsplash.com/photo-1594145070248-25d25950854c?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "使用「隱身」技能反殺刺客",
+                "responseText": "你學會了刺客的技巧。你像幽靈一樣在戰場穿梭，收割著騎士的生命，奪取他們的氣息。",
+                "nextNodeId": "igris_throne",
+                "condition": {
+                    "reqStat": "DEX",
+                    "difficulty": 15
+                }
+            },
+            {
+                "text": "憑藉高屬性正面硬剛",
+                "responseText": "你用蠻力粉碎了騎士的盾牌。雖然受了傷，體力透支，但你憑藉著不屈的意志殺出了一條血路。",
+                "nextNodeId": "igris_throne",
+                "effect": {
+                    "hpChange": -30
+                }
+            }
+        ]
+    },
+    {
+        "id": "igris_throne",
+        "title": "血紅騎士：伊格利特",
+        "text": "在大廳盡頭的王座上，坐著一位身穿血紅色盔甲的騎士長。他散發著令人窒息的壓迫感，紅色的盔甲纓在風中飄揚。\n\n伊格利特站了起來，拔出長劍，同時優雅地示意你攻過來。他不僅強大，還擁有騎士的榮耀。",
+        "imageSrc": "https://images.unsplash.com/photo-1543039625-14bcd2ee8b03?q=80&w=2574&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "丟掉匕首，空手搏鬥 (力量判定)",
+                "responseText": "伊格利特欣賞你的騎士精神，他也丟掉了武器。你們展開了肉搏。你抓住了破綻，用一記重拳將他擊倒。",
+                "nextNodeId": "job_promotion",
+                "condition": {
+                    "reqStat": "STR",
+                    "difficulty": 16
+                }
+            },
+            {
+                "text": "使用「卡薩卡的毒牙」偷襲",
+                "responseText": "你利用速度優勢，匕首刺穿了他的盔甲縫隙，卡薩卡的毒素麻痺了他的動作。你贏了，但贏得很艱難。",
+                "nextNodeId": "job_promotion",
+                "condition": {
+                    "reqItem": "KasakaDagger"
+                }
+            }
+        ]
+    },
+    {
+        "id": "job_promotion",
+        "title": "轉職：亡靈法師",
+        "text": "戰鬥結束。系統開始結算你的表現。你緊張地等待著結果，希望能獲得戰士或刺客的高級職業。\n\n【根據你的戰鬥數據，你沒有成為刺客或戰士。】\n【你統領著死亡。】\n【職業賦予：亡靈法師。】\n【正在晉升... 高級亡靈法師... 暗影君主。】",
+        "imageSrc": "https://images.unsplash.com/photo-1633511090164-b43840ea1607?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "接受這份力量 (正統路線)",
+                "responseText": "你感覺到一股冰冷而強大的力量湧入體內。你可以聽到周圍屍體的呼喚，那是亡者渴望再次戰鬥的聲音。",
+                "nextNodeId": "shadow_extraction_igris",
+                "effect": {
+                    "statChange": {
+                        "INT": 15
+                    },
+                    "addSkill": "Arise"
+                }
+            }
+        ]
+    },
+    {
+        "id": "shadow_extraction_igris",
+        "title": "影子提取：伊格利特",
+        "text": "你站在伊格利特的屍體前，黑色的氣息在他身上繚繞。你知道該說什麼，那是喚醒亡者的咒語。\n\n你可以嘗試提取他的影子，讓他成為你的士兵。你有三次機會。",
+        "imageSrc": "https://images.unsplash.com/photo-1550565118-c974095cc3d8?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "命令語：「站起來 (Arise)！」",
+                "responseText": "黑色的手從屍體中伸出，抓住了地面。身穿黑鎧、散發著藍色光芒的伊格利特重生了。他單膝跪地，向你宣誓效忠。",
+                "nextNodeId": "red_gate_start",
+                "effect": {
+                    "addSkill": "Igris",
+                    "statChange": {
+                        "INT": 5,
+                        "ALI": -10
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "job_quest_mage",
+        "title": "轉職分支：真理的探索者",
+        "text": "你來到了隱藏的圖書館。這裡沒有敵人，只有無盡的魔法書，每一本都記載著足以毀滅城市的禁咒。\n\n系統提示：【檢測到高智力玩家。是否轉職為「魔法大君」？】\n這是一條放棄暗影軍團，專注於極致毀滅魔法的道路。",
+        "imageSrc": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2628&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "接受：成為掌控元素的魔法師",
+                "responseText": "你放棄了對死亡的操控，獲得了對元素的絕對支配權。你的雙眼燃燒著蒼藍色的火焰，世界在你眼中變成了魔力的線條。",
+                "nextNodeId": "red_gate_start",
+                "effect": {
+                    "statChange": {
+                        "INT": 30
+                    },
+                    "addSkill": "DragonFire"
+                }
+            },
+            {
+                "text": "拒絕：我還是更喜歡戰士的風格",
+                "responseText": "你搖了搖頭，離開了圖書館，回到了充滿殺戮的競技場。",
+                "nextNodeId": "igris_throne"
+            }
+        ]
+    },
+    {
+        "id": "job_quest_glitch",
+        "title": "系統異常：管理員後門",
+        "text": "你利用「代碼視覺」找到了地圖邊界的漏洞。你撕開了空氣，進入了一個充滿綠色數據流的房間。\n\n這裡沒有怪物，只有一個閃爍的終端機。你是第一個來到這裡的玩家。這是系統設計者的後門。",
+        "imageSrc": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "嘗試駭入系統核心 (智力判定)",
+                "responseText": "你的手指在虛擬鍵盤上飛舞。防火牆試圖燒毀你的大腦，但你憑藉著超凡的智力堅持住了。",
+                "nextNodeId": "glitch_success",
+                "condition": {
+                    "reqStat": "INT",
+                    "difficulty": 18
+                },
+                "failureNodeId": "glitch_fail"
+            }
+        ]
+    },
+    {
+        "id": "glitch_success",
+        "title": "系統：獲得權限",
+        "text": "【警告：非法訪問。】\n【檢測到管理員權限... 覆寫成功。】\n\n你獲得了修改自身數據的能力，並解鎖了隱藏職業「系統破壞者」。你可以隨意調整自己的屬性，甚至刪除任務。",
+        "imageSrc": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "修改數據：全屬性最大化",
+                "responseText": "你感覺身體充滿了神一般的力量。你不再是玩家，你是GM。",
+                "nextNodeId": "red_gate_start",
+                "effect": {
+                    "statChange": {
+                        "STR": 50,
+                        "INT": 50,
+                        "DEX": 50
+                    },
+                    "addSkill": "SystemAdmin"
+                }
+            }
+        ]
+    },
+    {
+        "id": "glitch_fail",
+        "title": "系統：防火牆反擊",
+        "text": "【入侵失敗。啟動防禦機制。】\n\n紅色的電流貫穿了你的全身。你被強制踢出了數據空間，並受到重創。系統似乎對你產生了敵意。",
+        "imageSrc": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "醒來，回到競技場",
+                "responseText": "你吐出一口鮮血，發現自己回到了伊格利特面前。只能硬著頭皮戰鬥了。",
+                "nextNodeId": "igris_throne",
+                "effect": {
+                    "hpChange": -50
+                }
+            }
+        ]
+    },
+    {
+        "id": "red_gate_start",
+        "title": "紅門事件：極寒之地",
+        "text": "為了測試實力，你參加了白虎公會的訓練。然而，傳送門突然變成了紅色——你們被困在了異空間。\n\n這裡是一片極寒的雪原。白虎公會的A級獵人金哲試圖拋棄低級隊員，只帶著強者離開。而樹林中，無數冰精靈正在窺視。",
+        "imageSrc": "https://images.unsplash.com/photo-1516634842-886d38c64447?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "展現實力，保護所有人",
+                "responseText": "「別怕。」你召喚出了影子步兵。黑色的軍團瞬間淹沒了來襲的冰熊。所有人都震驚地看著你，把你當作救世主。",
+                "nextNodeId": "ice_elves_attack",
+                "effect": {
+                    "alignment": 10
+                }
+            },
+            {
+                "text": "獨自行動，尋找BOSS",
+                "responseText": "你消失在風雪中。金哲的隊伍很快就被殲滅了，而你找到了真正的獵物。",
+                "nextNodeId": "ice_elves_attack",
+                "effect": {
+                    "alignment": -10
+                }
+            },
+            {
+                "text": "【暴君路線】殺死金哲，統治倖存者",
+                "responseText": "你一刀斬殺了金哲，冷冷地看著其他人：「現在我是這裡的王。想活命就聽我的。」",
+                "nextNodeId": "tyrant_path_start",
+                "effect": {
+                    "alignment": -50,
+                    "addSkill": "Intimidation"
+                }
+            }
+        ]
+    },
+    {
+        "id": "ice_elves_attack",
+        "title": "紅門：白鬼巴魯卡",
+        "text": "這個副本的主人是白鬼領主巴魯卡。他帶著一群冰精靈伏擊了你們。\n\n巴魯卡的速度極快，普通的影子士兵根本追不上他。他嘲笑著你的軍團只是無腦的傀儡。",
+        "imageSrc": "https://images.unsplash.com/photo-1548504769-900b70ed1c34?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "讓伊格利特正面牽制，自己偷襲",
+                "responseText": "伊格利特與巴魯卡劍鋒相對。你趁機發動「要害攻擊」，一刀刺穿了巴魯卡的心臟。",
+                "nextNodeId": "shadow_extraction_iron",
+                "condition": {
+                    "reqSkill": "Igris"
+                }
+            },
+            {
+                "text": "單挑巴魯卡 (需極高敏捷)",
+                "responseText": "你的速度超越了白鬼。你將他的頭顱斬下，終結了這場寒冬。",
+                "nextNodeId": "shadow_extraction_iron",
+                "condition": {
+                    "reqStat": "DEX",
+                    "difficulty": 20
+                }
+            },
+            {
+                "text": "使用「龍之火」燒盡一切 (魔法大君路線)",
+                "responseText": "蒼藍色的火焰融化了冰雪，也融化了精靈們。整個雪原變成了一片火海。",
+                "nextNodeId": "shadow_extraction_iron",
+                "condition": {
+                    "reqSkill": "DragonFire"
+                }
+            }
+        ]
+    },
+    {
+        "id": "tyrant_path_start",
+        "title": "暴君之路：恐懼統治",
+        "text": "你利用紅門事件除掉了所有不服從你的人。回到現實後，你開始建立自己的勢力，不再受獵人協會的約束。\n\n你通過暴力和恐懼統治了地下世界，成為了影子帝國的皇帝。",
+        "imageSrc": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2671&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "向獵人協會宣戰",
+                "responseText": "「這個世界需要新的秩序。」你帶領著影子軍團攻佔了協會總部。",
+                "nextNodeId": "guild_war",
+                "effect": {
+                    "statChange": {
+                        "STR": 10
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "shadow_extraction_iron",
+        "title": "影子提取：鐵",
+        "text": "你擊敗了巴魯卡。同時，在雪地中你發現了金哲的屍體。這個愚蠢但強壯的A級坦克或許有點用處。\n\n「站起來。」",
+        "imageSrc": "https://images.unsplash.com/photo-1516574187841-693083f652eb?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "提取金哲的影子",
+                "responseText": "一個巨大的盾牌戰士從影子中升起，發出憨厚的吼聲。你給他起名為「鐵」。你的軍團獲得了最強之盾。",
+                "nextNodeId": "demon_castle_entry",
+                "effect": {
+                    "addSkill": "Iron",
+                    "statChange": {
+                        "INT": 5
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "demon_castle_entry",
+        "title": "惡魔城：登塔",
+        "text": "為了解決母親的病，你進入了系統提供的S級副本「惡魔城」。這是一座燃燒的一百層高塔，充滿了高等惡魔。\n\n你需要收集「世界樹的碎片」、「惡魔君主的血液」和「淨化之泉」。",
+        "imageSrc": "https://images.unsplash.com/photo-1577493322601-3a1307c22557?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "一層層清理上去，練級 (耗時)",
+                "responseText": "你屠殺了數萬只惡魔，等級飆升。你的影子軍團也變得更加強大。",
+                "nextNodeId": "demon_castle_floor_50",
+                "effect": {
+                    "statChange": {
+                        "STR": 5,
+                        "INT": 5,
+                        "DEX": 5
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "demon_castle_floor_50",
+        "title": "50層：貪婪的沃爾坎",
+        "text": "50層的守衛者是一個手持巨棍的肥胖惡魔領主「沃爾坎」。他的力量足以震碎地面。\n\n你召喚出了影子軍團。",
+        "imageSrc": "https://images.unsplash.com/photo-1629812456605-4a044aa38fbc?q=80&w=2574&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "命令鐵頂住攻擊，伊格利特輸出",
+                "responseText": "鐵舉起巨盾擋住了沃爾坎的重擊。伊格利特化作一道紅光，斬斷了惡魔的腳筋。你補上了最後一擊。",
+                "nextNodeId": "demon_castle_floor_75",
+                "condition": {
+                    "reqSkill": "Iron"
+                }
+            }
+        ]
+    },
+    {
+        "id": "demon_castle_floor_75",
+        "title": "75層：引導者梅圖斯",
+        "text": "75層充滿了亡靈。這裡的主人是大巫妖梅圖斯，他同樣能召喚不死軍團。\n\n這是一場軍團對軍團的戰爭。黑色與白色的骷髏海撞在了一起。",
+        "imageSrc": "https://images.unsplash.com/photo-1509564322476-6c5c0c98f82f?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "使用「支配者之手」直接攻擊本體",
+                "responseText": "你無視了雜兵，用念力抓住了空中的梅圖斯，將他捏碎。你提取了他的靈魂，獲得了強力的魔法影子。",
+                "nextNodeId": "demon_castle_floor_100",
+                "condition": {
+                    "reqStat": "INT",
+                    "difficulty": 20
+                }
+            }
+        ]
+    },
+    {
+        "id": "demon_castle_floor_100",
+        "title": "100層：惡魔王巴蘭",
+        "text": "你站在了塔頂。惡魔王巴蘭騎著飛龍凱塞爾在空中盤旋，釋放著雷電。\n\n這是你面對的第一個「王級」生物。",
+        "imageSrc": "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2574&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "將伊格利特投擲出去",
+                "responseText": "你用支配者之手將伊格利特像炮彈一樣扔向空中。他斬斷了飛龍的翅膀，巴蘭墜落。",
+                "nextNodeId": "holy_water_crafting",
+                "condition": {
+                    "reqSkill": "Igris"
+                }
+            },
+            {
+                "text": "正面硬抗雷電 (需極高體質)",
+                "responseText": "你沐浴著雷電，一步步走向墜落的魔王，一刀斬下首級。",
+                "nextNodeId": "holy_water_crafting",
+                "condition": {
+                    "reqStat": "STR",
+                    "difficulty": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": "holy_water_crafting",
+        "title": "生命神水",
+        "text": "你集齊了所有材料，在系統的幫助下合成了「生命神水」。\n\n回到現實，你將神水喂給了母親。奇蹟發生了，沉睡了四年的母親睜開了眼睛。",
+        "imageSrc": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=2574&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "這是旅程中最棒的一刻",
+                "responseText": "看著母親的笑容，你發誓要保護這個世界。你的意志更加堅定了。",
+                "nextNodeId": "jeju_briefing",
+                "effect": {
+                    "alignment": 20,
+                    "sanity": 20
+                }
+            }
+        ]
+    },
+    {
+        "id": "jeju_briefing",
+        "title": "濟州島突襲：前奏",
+        "text": "S級傳送門在濟州島失控已經數年。變異的螞蟻魔獸進化出了智慧，甚至能飛行。\n\n日本獵人協會提議與韓國聯手。這是一場集結了亞洲最強S級獵人的戰役。但你感覺到了日本方面的陰謀。",
+        "imageSrc": "https://images.unsplash.com/photo-1555662709-c119d6754025?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "拒絕參加，但留下影子士兵保護韓國隊員",
+                "responseText": "你將影子士兵藏在車海印的影子裡。如果發生意外，你可以使用「暗影交換」瞬間趕到。",
+                "nextNodeId": "ant_raid_start"
+            },
+            {
+                "text": "【深淵路線】讓他們去死，我只在乎經驗值",
+                "responseText": "你冷眼旁觀。濟州島將成為他們的墳墓，也是你獲取最強影子的獵場。",
+                "nextNodeId": "ant_raid_start",
+                "effect": {
+                    "sanity": -20,
+                    "alignment": -20
+                }
+            }
+        ]
+    },
+    {
+        "id": "ant_raid_start",
+        "title": "突襲開始：噩夢降臨",
+        "text": "突襲初期很順利。但突然，蟻穴深處傳來了一股恐怖的氣息。一隻直立行走、長著翅膀的「螞蟻王」誕生了。\n\n它瞬間秒殺了多名日本S級獵人。韓國最強獵人高建利也被一擊重傷。",
+        "imageSrc": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2560&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "發動技能：暗影交換！",
+                "responseText": "「交換。」世界旋轉。你瞬間從家裡移動到了充滿血腥味的濟州島戰場，擋在了絕望的車海印面前。",
+                "nextNodeId": "beru_fight"
+            }
+        ]
+    },
+    {
+        "id": "beru_fight",
+        "title": "決戰：王對王",
+        "text": "螞蟻王歪著頭看著你，它感覺到了威脅。它的速度快到連S級獵人都看不清。\n\n「你是...王嗎？」它發出了刺耳的人類語言。",
+        "imageSrc": "https://images.unsplash.com/photo-1542259681-d41c9c228d44?q=80&w=2000&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "釋放全部魔力：暗影領域",
+                "responseText": "黑色的領域覆蓋了整座島嶼。無數影子士兵從地底湧出，將螞蟻大軍反包圍。",
+                "nextNodeId": "beru_defeat",
+                "condition": {
+                    "reqStat": "INT",
+                    "difficulty": 22
+                }
+            },
+            {
+                "text": "單挑：亂刀狂斬",
+                "responseText": "你的匕首快如閃電，切斷了螞蟻王的翅膀和四肢。你在純粹的力量上碾壓了它。",
+                "nextNodeId": "beru_defeat",
+                "condition": {
+                    "reqStat": "STR",
+                    "difficulty": 22
+                }
+            },
+            {
+                "text": "【深淵路線】吞噬螞蟻王 (需暴食技能)",
+                "responseText": "你沒有殺死它，而是直接啃食了它的血肉。你獲得了螞蟻王的力量，身體開始變異。",
+                "nextNodeId": "abyssal_evolution",
+                "condition": {
+                    "reqSkill": "Gluttony"
+                }
+            }
+        ]
+    },
+    {
+        "id": "beru_defeat",
+        "title": "影子提取：貝爾",
+        "text": "螞蟻王在恐懼中死去了。你站在它的屍體前，感受到了前所未有的強大靈魂。\n\n「站起來。」\n\n黑色的翅膀展開，最強的影子士兵「貝爾」誕生了。他保留了語言能力，狂熱地跪下親吻你的腳尖：「我的王...」",
+        "imageSrc": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=2000&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "接受他的效忠",
+                "responseText": "你成為了全世界公認的「國家權力級」獵人。",
+                "nextNodeId": "architect_reveal",
+                "effect": {
+                    "addSkill": "Beru",
+                    "statChange": {
+                        "ALI": -20
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "architect_reveal",
+        "title": "真相：重返雙重地下城",
+        "text": "隨著等級達到100級，系統邀請你重返起點——卡爾泰農神廟。在那裡，你見到了系統的設計者「建築師」。\n\n他告訴你，這一切都是為了讓你成為「暗影君主」阿什伯恩的容器。現在，他要測試你是否合格。",
+        "imageSrc": "https://images.unsplash.com/photo-1548504769-900b70ed1c34?q=80&w=2670&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "殺死設計者，奪取心臟",
+                "responseText": "這是一場艱難的戰鬥，但你已經超越了設計者的預期。你殺死了他，原本的暗影君主將力量完全託付給了你。系統消失了，你成為了真正的君主。",
+                "nextNodeId": "monarch_invasion",
+                "effect": {
+                    "statChange": {
+                        "STR": 10,
+                        "INT": 10,
+                        "DEX": 10
+                    },
+                    "addItem": "BlackHeart"
+                }
+            },
+            {
+                "text": "【系統駭客】利用管理員權限刪除設計者",
+                "responseText": "「不！這不可能！」建築師的身體開始崩解為數據碎片。你重寫了規則，成為了系統的唯一主人。",
+                "nextNodeId": "system_god_ending",
+                "condition": {
+                    "reqSkill": "SystemAdmin"
+                }
+            }
+        ]
+    },
+    {
+        "id": "monarch_invasion",
+        "title": "終章：君主降臨",
+        "text": "其他的君主（冰霜、野獸、瘟疫）感應到了你的覺醒，他們違背了契約，降臨地球試圖殺死你。\n\n首爾變成了冰封的戰場。你在戰鬥中被冰霜君主刺穿了心臟。",
+        "imageSrc": "https://images.unsplash.com/photo-1516634842-886d38c64447?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "擁抱死亡...",
+                "responseText": "在虛無中，你與阿什伯恩對話。你選擇了回歸，不再是作為容器，而是作為死亡本身。",
+                "nextNodeId": "true_awakening"
+            }
+        ]
+    },
+    {
+        "id": "true_awakening",
+        "title": "完全覺醒",
+        "text": "你復活了。你的外表沒有變化，但氣息已經變成了深淵。你輕輕揮手，冰霜君主和野獸君主瞬間被影子吞沒。\n\n然而，天空裂開了。最強的毀滅君主「龍帝」安塔瑞斯帶著毀滅軍團降臨了。",
+        "imageSrc": "https://images.unsplash.com/photo-1550565118-c974095cc3d8?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "將龍帝拖入次元裂縫決戰",
+                "responseText": "為了不破壞地球，你將戰場轉移。你和龍帝展開了毀天滅地的廝殺。",
+                "nextNodeId": "final_battle"
+            }
+        ]
+    },
+    {
+        "id": "final_battle",
+        "title": "決戰：龍與影",
+        "text": "龍帝化身為覆蓋天空的巨龍，噴吐著毀滅的火焰。你的影子軍團在燃燒，你的鎧甲破碎。\n\n但在關鍵時刻，支配者們的軍隊趕到了。龍帝被擊敗了。",
+        "imageSrc": "https://images.unsplash.com/photo-1577493322601-3a1307c22557?q=80&w=2670&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "使用「輪迴之杯」重啟時間 (真結局)",
+                "responseText": "你看著滿目瘡痍的地球，決定使用支配者的寶物。時間倒流10年，你在次元縫隙中獨自戰鬥了27年，消滅了所有君主。",
+                "nextNodeId": "ending_time_reversal"
+            },
+            {
+                "text": "作為君主留在現世",
+                "responseText": "你選擇了保留這份記憶與榮耀。地球迎來了和平，而你是永恆的守護神。",
+                "nextNodeId": "ending_shadow_monarch"
+            }
+        ]
+    },
+    {
+        "id": "guild_war",
+        "title": "暴君線：公會戰爭",
+        "text": "你向所有公會宣戰。美國最強獵人托馬斯·安德烈試圖阻止你，但在你的影子軍團面前，國家權力級也不過如此。\n\n你站在世界的頂點，但已經沒有人敢直視你的眼睛。",
+        "imageSrc": "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2574&auto=format&fit=crop",
+        "type": "combat",
+        "choices": [
+            {
+                "text": "處決所有反對者",
+                "responseText": "鮮血染紅了王座。你統一了地球，建立了一個以力量為尊的帝國。",
+                "nextNodeId": "ending_tyrant"
+            }
+        ]
+    },
+    {
+        "id": "abyssal_evolution",
+        "title": "深淵線：魔化",
+        "text": "吞噬螞蟻王后，你的身體發生了不可逆的變異。你長出了甲殼和翅膀，人性正在迅速消失。\n\n你不再覺得魔獸是敵人，反而覺得人類才是異類。",
+        "imageSrc": "https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=2537&auto=format&fit=crop",
+        "type": "narrative",
+        "choices": [
+            {
+                "text": "帶領魔獸毀滅人類",
+                "responseText": "你成為了新的「獸之君主」。在你的帶領下，人類文明被抹去，地球回歸了原始的叢林法則。",
+                "nextNodeId": "ending_monster_king"
+            }
+        ]
+    },
+    {
+        "id": "system_god_ending",
+        "title": "結局：系統之神",
+        "text": "你抹除了建築師，接管了系統。你將地球改造成了一個巨大的遊戲場，賦予每個人升級的機會。\n\n你是這個新世界的GM，也是唯一的神。你用數據構建了一個沒有悲傷的烏托邦。\n\n(解鎖「數據異常者」開局)",
+        "imageSrc": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "重啟世界",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_tyrant",
+        "title": "結局：暴君",
+        "text": "你統治了世界，但你的暴政引發了無盡的反抗。你的一生都在鎮壓叛亂中度過，直到最後眾叛親離。\n\n你獲得了權力，卻失去了一切。",
+        "imageSrc": "https://images.unsplash.com/photo-1555662709-c119d6754025?q=80&w=2670&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "重新開始",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_monster_king",
+        "title": "結局：魔獸之王",
+        "text": "人類滅絕了。你坐在廢墟之上，周圍是你的魔獸子民。你感到無比的空虛，因為再也沒有獵物值得你狩獵了。",
+        "imageSrc": "https://images.unsplash.com/photo-1542259681-d41c9c228d44?q=80&w=2000&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "重新開始",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_time_reversal",
+        "title": "結局：無名英雄",
+        "text": "你回到了中學時代。傳送門沒有開啟，沒有獵人，也沒有魔獸。你依然擁有君主的力量，但在別人眼裡，你只是一個普通的學生。\n\n你與曾經的夥伴擦肩而過，雖然他們不認識你，但看著他們幸福的笑容，你知道這一切都是值得的。\n\n(解鎖「暗影君主」開局)",
+        "imageSrc": "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=2671&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "再來一次",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_shadow_monarch",
+        "title": "結局：永恆的君主",
+        "text": "你坐在暗影王座上，貝爾和伊格利特侍立在旁。世界敬畏你，將你視為神明。你獲得了永生，卻也失去了平凡的幸福。\n\n(解鎖「暗影君主」開局)",
+        "imageSrc": "https://images.unsplash.com/photo-1629812456605-4a044aa38fbc?q=80&w=2574&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "統治永恆",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_coward",
+        "title": "結局：苟且偷生",
+        "text": "你逃跑了。雖然活了下來，但那天的恐怖景象成為了你永恆的噩夢。你退出了獵人協會，作為一個普通人度過了充滿悔恨的一生。",
+        "imageSrc": "https://images.unsplash.com/photo-1516574187841-693083f652eb?q=80&w=2670&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "重新開始",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    },
+    {
+        "id": "ending_death_statue",
+        "title": "結局：神像的祭品",
+        "text": "你沒能通過試煉。在絕對的力量面前，弱者沒有生存的權利。你的旅程在開始之前就結束了。",
+        "imageSrc": "https://images.unsplash.com/photo-1517544845501-bb78cc6818eb?q=80&w=2670&auto=format&fit=crop",
+        "type": "ending",
+        "choices": [
+            {
+                "text": "重新挑戰",
+                "nextNodeId": "character_creation"
+            }
+        ]
+    }
+]
